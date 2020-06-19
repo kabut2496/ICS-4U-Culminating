@@ -59,7 +59,7 @@ ArrayList<Integer> time = new ArrayList<>();
         jPanel1.setBackground(new java.awt.Color(66, 135, 245));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Put Tital here");
+        jLabel1.setText("Time Manager");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 110, 30));
 
         startTime.addActionListener(new java.awt.event.ActionListener() {
@@ -69,10 +69,10 @@ ArrayList<Integer> time = new ArrayList<>();
         });
         jPanel1.add(startTime, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 110, -1));
 
-        jLabel2.setText("Enter time task was strted with out a :");
+        jLabel2.setText("Enter time task was started without a :");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 210, -1));
 
-        jLabel3.setText("What Task did you complete");
+        jLabel3.setText("What task did you complete");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 170, -1));
 
         taskDone.addActionListener(new java.awt.event.ActionListener() {
@@ -83,7 +83,7 @@ ArrayList<Integer> time = new ArrayList<>();
         jPanel1.add(taskDone, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 110, -1));
         jPanel1.add(endTime, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 110, -1));
 
-        jLabel4.setText("Enter Time task was finished with out a :");
+        jLabel4.setText("Enter time task was finished without a :");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 230, -1));
 
         jButton1.setText("Add Task");
@@ -94,7 +94,7 @@ ArrayList<Integer> time = new ArrayList<>();
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 80, -1));
 
-        jLabel5.setText("Enter all Times for a 24 Hour Clock ");
+        jLabel5.setText("Enter all tmes for a 24 hour clock ");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 220, -1));
 
         outPut.setText("out put");
@@ -158,7 +158,7 @@ ArrayList<Integer> time = new ArrayList<>();
         String display = "";
 for (int i=0;i<=num3-1;i++)
 {                
-display+="Task:"+(i+1) +" "+tasksDone.get(i) + " time for task "+time.get(i)+" minutes \n";    
+display+="Task "+(i+1) +": "+tasksDone.get(i) + " - Time for task "+(i+1) +": "+time.get(i)+" minutes \n";    
 timeTotal=timeTotal +time.get(i); 
 }
 display+="the total time worked is " + timeTotal +" minutes";
